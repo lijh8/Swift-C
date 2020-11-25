@@ -1,4 +1,4 @@
-# swift-c
+# Swift-C
 Call C shared library (.so) from Swift
 
 // https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2
