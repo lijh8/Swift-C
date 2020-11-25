@@ -20,6 +20,8 @@ example:  // Swift wrapper code
 
 $ cd example
 
+$ swift package init --type executable
+
 $ swift build -Xlinker -L../hello
 
 $ cp ../hello/libhello.so .build/debug
