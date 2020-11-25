@@ -2,4 +2,4 @@ import clib
 import hellolib
 
 hello()
-fputs("fputs\n", stdout);
+fputs("fputs\n", stdout)

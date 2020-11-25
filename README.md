@@ -1,7 +1,7 @@
 # Swift-C
 Swift Calls C functions from shared library (.so)
 
-Libraries can be 3rd party user defined or system libc.so
+It can be your own library or system library
 
 https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2
 
@@ -11,7 +11,7 @@ main.swift:
 
 hello()  // user defined function
 
-fputs("fputs\n", stdout);  // fputs(3) from <stdio.h>
+fputs("fputs\n", stdout)  // <stdio.h> libc.so
 
 hello: C library code
 
