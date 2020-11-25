@@ -1,12 +1,15 @@
 # swift-c
 
-Call C function in .so shared library from Swift
+Call C functions in .so shared library from Swift
 
-rename output file from hello to libhello.so after build it
+hello:  // C library code
+$ cd hello
+$ make
+$ mv hello libhello.so
 
-no pkg-config, dnf, yum, apt
-
-swift build -Xlinker -L../hello
-
-cp libhello.so .build/debug
-
+example:  // Swift code
+// no pkg-config, dnf, yum, apt
+$ cd example
+$ swift build -Xlinker -L../hello
+$ cp ../hello/libhello.so .build/debug
+$ swift run
