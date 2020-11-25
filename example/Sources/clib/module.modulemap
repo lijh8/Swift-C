@@ -1,0 +1,4 @@
+module clib {
+    header "/usr/include/stdio.h"
+    link "c"
+}
