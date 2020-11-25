@@ -10,7 +10,7 @@ $ make
 
 $ mv hello libhello.so
 
-example:  // Swift code
+example:  // Swift wrapper code
 
 // no pkg-config, dnf, yum, apt
 
