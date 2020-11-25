@@ -1,0 +1,4 @@
+module hellolib {
+    header "../../../hello/hello.h"
+    link "hello"
+}
