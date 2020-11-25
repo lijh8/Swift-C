@@ -1,5 +1,5 @@
 # Swift-C
-Swift Calls C function from shared library (.so)
+Swift Calls C function from shared library
 
 It can be your own library or system library like libc.so
 
