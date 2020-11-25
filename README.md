@@ -9,11 +9,11 @@ https://github.com/apple/swift-package-manager/blob/263171977ebcd47f4aaca1202cff
 
 main.swift:
 
-hello()  // user defined function
+hello()  // user defined
 
 fputs("fputs\n", stdout)  // <stdio.h> libc.so
 
-hello: C library code
+hello:
 
 $ cd hello
 
@@ -21,19 +21,17 @@ $ make
 
 $ mv hello libhello.so
 
-example: Swift wrapper code
+example:
 
 $ cd example
 
 $ swift package init --type executable
 
-$ swift build -Xlinker -L../hello -Xlinker -L/usr/lib64
+$ swift build   -Xlinker -L../hello   -Xlinker -L/usr/lib64
 
 $ cp ../hello/libhello.so .build/debug
 
 $ swift run
-
-[1/1] Linking example
 
 hello c lib
 
