@@ -1,17 +1,33 @@
 # Swift-C
 Swift Calls C function from shared library (.so)
 
-From your own library or system library
+From your own library or system library like libc.so
 
 https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2
 
 https://github.com/apple/swift-package-manager/blob/263171977ebcd47f4aaca1202cff5a96c5158a64/Documentation/Usage.md#import-system-libraries
 
+hello.c:
+
+#include <stdio.h>
+
+#include "hello.h"
+
+void hello(void) {
+
+    printf("Hello C World\n");
+
+}
+
 main.swift:
 
-hello()  // user defined
+import clib
 
-fputs("fputs\n", stdout)  // <stdio.h> libc.so
+import hellolib
+
+hello()
+
+fputs("Swift calls fputs(3)\n", stdout)
 
 hello:
 
