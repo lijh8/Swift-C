@@ -21,3 +21,7 @@ $ swift build -Xlinker -L../hello
 $ cp ../hello/libhello.so .build/debug
 
 $ swift run
+
+hello c lib
+
+$
