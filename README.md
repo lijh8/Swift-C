@@ -33,8 +33,9 @@ $ cp ../hello/libhello.so .build/debug
 
 $ swift run
 
-hello c lib
+Hello C World
 
-fputs
+Swift calls fputs(3)
 
 $
+
