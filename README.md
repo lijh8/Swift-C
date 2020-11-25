@@ -1,7 +1,7 @@
 # Swift-C
-Swift Calls C functions from shared library (.so)
+Swift Calls C function from shared library (.so)
 
-It can be your own library or system library
+From your own library or system library
 
 https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2
 

@@ -2,5 +2,5 @@
 #include "hello.h"
 
 void hello(void) {
-    printf("hello c lib\n");
+    printf("Hello C World\n");
 }
