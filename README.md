@@ -15,7 +15,7 @@ hello.c:
 
 void hello(void) {
 
-    printf("Hello C World\n");
+printf("Hello C World\n");
 
 }
 
