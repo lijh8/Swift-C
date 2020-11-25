@@ -1,7 +1,7 @@
 # Swift-C
 Swift Calls C function from shared library (.so)
 
-From your own library or system library like libc.so
+It can be your own library or system library like libc.so
 
 https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2
 
