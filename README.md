@@ -3,9 +3,9 @@ Swift Calls C function from shared library
 
 It can be your own library or system library like libc.so
 
-https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2
+[System target library: How to use them](https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2)
 
-https://github.com/apple/swift-package-manager/blob/263171977ebcd47f4aaca1202cff5a96c5158a64/Documentation/Usage.md#import-system-libraries
+[swift-package-manager/Documentation/Usage.md](https://github.com/apple/swift-package-manager/blob/263171977ebcd47f4aaca1202cff5a96c5158a64/Documentation/Usage.md#import-system-libraries)
 
 Swift 5.3, Fedora 33
 
