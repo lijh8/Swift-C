@@ -29,7 +29,7 @@ example:
 ```
 $ cd example
 $ swift package init --type executable
-$ swift build   -Xlinker -L../hello   -Xlinker -L/usr/lib64
+$ swift build  -Xlinker -L../hello  -Xlinker -L/usr/lib64
 $ cp ../hello/libhello.so .build/debug
 $ swift run
 Hello C World
