@@ -37,5 +37,5 @@ Swift calls fputs(3)
 $
 ```
 
-- [System target library: How to use them](https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2)
-- [swift-package-manager/Documentation/Usage.md](https://github.com/apple/swift-package-manager/blob/263171977ebcd47f4aaca1202cff5a96c5158a64/Documentation/Usage.md#import-system-libraries)
+1. [System target library: How to use them](https://forums.swift.org/t/system-target-library-how-to-use-them/18196/2)
+2. [swift-package-manager/Documentation/Usage.md](https://github.com/apple/swift-package-manager/blob/263171977ebcd47f4aaca1202cff5a96c5158a64/Documentation/Usage.md#import-system-libraries)
