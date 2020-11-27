@@ -3,4 +3,5 @@ module clib {
     header "../../../hello/hello.h"
     link "c"
     link "hello"
+    export *
 }
