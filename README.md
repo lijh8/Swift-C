@@ -20,7 +20,7 @@ fputs("Your input: ", stdout)  // system function
 fgets(&buf, Int32(buf.count), stdin)
 print(String(cString: buf))
 
-hello()  // user defined function
+hello()  // user function
 ```
 hello:
 ```
