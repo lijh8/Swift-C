@@ -1,7 +1,0 @@
-module clib {
-    header "/usr/include/stdio.h"
-    header "../../../hello/hello.h"
-    link "c"
-    link "hello"
-    export *
-}
