@@ -1,8 +1,0 @@
-module soLib {
-    header "/usr/include/stdio.h"
-    header "./hello.h"
-
-    link "c"
-    link "hello"
-    export *
-}
