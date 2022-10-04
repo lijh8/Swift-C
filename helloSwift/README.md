@@ -144,9 +144,9 @@ $
 $ cat helloApp/Sources/soLib/module.modulemap
 module soLib {
     // header "/usr/include/stdio.h"
-    header "./hello.h"
-
     // link "c"
+
+    header "./hello.h"
     link "hello"
 
     export *
