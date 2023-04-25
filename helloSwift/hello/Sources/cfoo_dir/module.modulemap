@@ -1,0 +1,9 @@
+module cfoo {
+    //header "/usr/include/stdio.h"
+    //link "c"
+
+    header "./foo.h"
+    link "foo"
+
+    export *
+}
