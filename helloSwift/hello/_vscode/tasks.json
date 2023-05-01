@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+     {
+      "label": "build",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}",
+      },
+      // "command": "/usr/bin/make",
+      "command": "bash ${workspaceFolder}/build.sh",
+      // "command": "swift",
+      // "args": [
+      //   "build",
+      //   "-c", "debug", // , "debug", //"release",
+      //   // "-Xswiftc", "-g", // "-g" , "-O"
+      //   "-Xlinker", "-L", "-Xlinker", "Sources/cfoo_dir/",
+      //   "-Xlinker", "-rpath", "-Xlinker", "Sources/cfoo_dir/",
+      // ]
+    }
+  ]
+}
