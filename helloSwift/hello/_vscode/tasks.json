@@ -8,14 +8,15 @@
         "cwd": "${workspaceFolder}",
       },
       // "command": "/usr/bin/make",
-      "command": "/usr/bin/swift",
-      "args": [
-        "build",
-        "-c", "debug", // , "debug", //"release",
-        "-Xswiftc", "-g", // "-g" , "-O"
-        // "-Xlinker", "-L", "-Xlinker", "Sources/cfoo_dir/",
-        // "-Xlinker", "-rpath", "-Xlinker", "Sources/cfoo_dir/",
-      ]
+      "command": "bash ${workspaceFolder}/build.sh",
+      // "command": "swift",
+      // "args": [
+      //   "build",
+      //   "-c", "debug", // , "debug", //"release",
+      //   // "-Xswiftc", "-g", // "-g" , "-O"
+      //   "-Xlinker", "-L", "-Xlinker", "Sources/cfoo_dir/",
+      //   "-Xlinker", "-rpath", "-Xlinker", "Sources/cfoo_dir/",
+      // ]
     }
   ]
 }
