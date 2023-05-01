@@ -1,4 +1,4 @@
-import cfoo // so library in C language, module.modulemap: cfoo
+import bar // so library in C language, module.modulemap: bar
 import foo // another package
 import hello3_dir // a module in same package
 
@@ -14,7 +14,7 @@ public struct hello {
 
         hello3() // another module, requires public
 
-        //cfoo: c so library
+        //bar: c so library
         let n = 1024
         var s1 = [CChar](repeating: 0, count: n)
         let s2 = "hello"

@@ -19,12 +19,12 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .systemLibrary( name: "cfoo_dir"), // so library in C language
+        .systemLibrary( name: "bar"), // so library in C language
         .target( name: "hello3_dir", dependencies: []), // module inside same package
         .executableTarget(
             name: "hello",
-            dependencies: ["cfoo_dir", "foo", "hello3_dir"],
-            // dependencies: ["cfoo_dir", "hello3_dir"],
+            dependencies: ["bar", "foo", "hello3_dir"]//,
+            // dependencies: ["bar", "hello3_dir"],
 
             // error: unknown argument: '-Xswiftc', Swift version 5.7.2
             // swiftSettings: [
@@ -32,10 +32,10 @@ let package = Package(
             // ]
             // ,
 
-            linkerSettings: [
-                .unsafeFlags(["-Xlinker", "-rpath", "-Xlinker", "Sources/cfoo_dir"]),
-                .unsafeFlags(["-Xlinker", "-L", "-Xlinker", "Sources/cfoo_dir"]),
-            ]
+            // linkerSettings: [
+            //     .unsafeFlags(["-Xlinker", "-rpath", "-Xlinker", "Sources/bar"]),
+            //     .unsafeFlags(["-Xlinker", "-L", "-Xlinker", "Sources/bar"]),
+            // ]
         )
         // .testTarget( name: "helloTests", dependencies: ["hello"]),
     ]
