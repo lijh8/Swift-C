@@ -4,18 +4,15 @@
 # major.minor.patch
 # libtool manual: -version-number
 define makever
-	# @ $(MAKE) -C $@ soname=lib$@.dylib.$(word 1,$(subst ., ,$(1))) # gcc
-	@ $(MAKE) -C $@ soname=$(1) # clang
+	@ $(MAKE) -C $@ soname=$(1)
 
-	@ cp $(OBJDIR)/$@/$@ $(OBJDIR)/$@/lib$@.dylib.$(1)
+	@ cp $(OBJDIR)/$@/$@ $(OBJDIR)/$@/lib$@.$(1).dylib
 
-	@ cd $(OBJDIR)/$@ ; \
-		ln -f -s lib$@.dylib.$(1) lib$@.dylib.$(word 1,$(subst ., ,$(1))) ; \
-		cd - >/dev/null 2>&1 ;
+	@ ( cd $(OBJDIR)/$@ ; \
+		ln -f -s lib$@.$(1).dylib lib$@.$(word 1,$(subst ., ,$(1))).dylib )
 
-	@ cd $(OBJDIR)/$@ ; \
-		ln -f -s lib$@.dylib.$(1) lib$@.dylib ; \
-		cd - >/dev/null 2>&1 ;
+	@ ( cd $(OBJDIR)/$@ ; \
+		ln -f -s lib$@.$(1).dylib lib$@.dylib )
 endef
 
 # make # BUILD_DIR=build

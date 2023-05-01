@@ -25,5 +25,6 @@ public struct hello {
         let n2: CInt = 123
         intcpy(&n1, n2) // function in so library
         print("so", n1)
+
     }
 }
