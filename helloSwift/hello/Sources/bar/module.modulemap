@@ -1,9 +1,0 @@
-module bar {
-    //header "/usr/include/stdio.h"
-    //link "c"
-
-    header "./bar.h"
-    link "bar"
-
-    export *
-}
